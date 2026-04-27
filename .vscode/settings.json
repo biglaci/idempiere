@@ -1,5 +1,10 @@
 {
   "java.configuration.updateBuildConfiguration": "disabled",
   "java.import.maven.enabled": false,
+<<<<<<< Updated upstream
   "xml.validation.enabled": false
+=======
+  "xml.validation.enabled": false,
+  "java.project.resourceFilters": []
+>>>>>>> Stashed changes
 }
