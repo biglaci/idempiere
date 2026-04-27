@@ -1,0 +1,28 @@
+#!/bin/bash
+
+cd /Users/laci/Sources/idempiere14
+
+exec /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java \
+  -Xdock:name=ModelGenerator \
+  -Dapple.awt.UIElement=false \
+  -Djava.awt.headless=false \
+  -Dapple.awt.application.name=ModelGenerator \
+  -Dswing.aatext=true \
+  -Dfile.encoding=UTF-8 \
+  -Dstdout.encoding=UTF-8 \
+  -Dstderr.encoding=UTF-8 \
+  -Dosgi.noShutdown=true \
+  -Declipse.pde.launch=true \
+  --add-modules=ALL-SYSTEM \
+  -classpath "/Users/laci/Sources/idempiere14/org.idempiere.p2.targetplatform/target/target-platform-repository/plugins/org.eclipse.equinox.launcher_1.6.500.v20230717-2134.jar:" \
+  -XX:+ShowCodeDetailsInExceptionMessages \
+  org.eclipse.equinox.launcher.Main \
+  -application org.adempiere.base.ModelGeneratorApplication \
+  -data /Users/laci/Sources/idempiere14/runtime-model.generator \
+  -configuration "file:///Users/laci/Sources/idempiere14/.metadata/.plugins/org.eclipse.pde.core/model.generator/" \
+  -dev "file:///Users/laci/Sources/idempiere14/.metadata/.plugins/org.eclipse.pde.core/model.generator/dev.properties" \
+  -os macosx \
+  -ws cocoa \
+  -arch x86_64 \
+  -nl sk_SK \
+  -consoleLog
