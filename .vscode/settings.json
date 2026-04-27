@@ -1,0 +1,5 @@
+{
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "java.import.maven.enabled": false,
+  "xml.validation.enabled": false
+}
