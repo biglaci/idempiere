@@ -42,3 +42,4 @@ out/
 partial-runtime/
 
 **/.settings/
+.idpass-e
